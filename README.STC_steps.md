@@ -30,7 +30,7 @@ cp -r ../build/libstc_runtime ./
 8. copy run_engine.cpython-37m-x86_64-linux-gnu.so from 172.16.30.118:/home/qiupeng/projects/ByteMLPerf/run_engine.cpython-37m-x86_64-linux-gnu.so, check its md5sum:ada3cb3def1f8e58affc0729c19e01a8, ldd the so, make sure libstc_runtime.so、libtensorflow_cc.so.1、libonnxruntime.so.1.12.1 link to dir A
 ```
 ldd run_engine.cpython-37m-x86_64-linux-gnu.so
-export LD_LIBRARY_PATH=/home/mountpoint/dev-user/chenxin.lv/stc_ddk/output/libstc_runtime/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=xxx/stc_ddk/output/libstc_runtime/lib:$LD_LIBRARY_PATH
 ```
 9. pip install tb-ubuntu2004==1.11.0 -i https://stcp_user:StcpDownload@sources.streamcomputing.com/simple
 10. deactivate
